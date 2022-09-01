@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color:var(--Very-Dark-Blue);
+    color:white;
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0;
+    
+}
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+.rate-page,
+.rated-page {
+    background: var(--Dark-Blue);
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+.icon-star {
+    background-color: hsl(213, 19%, 23%);
+    height: 4.25rem;
+    width: 4.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+h1 {
+    color: var(--White);
+    font-size: 2.25rem;
+    font-weight: lighter;
+    margin-top: 0.5rem;
+}
+p {
+    color: var(--Light-Grey);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+   
+}
+label {
+    background-color: hsl(213, 19%, 23%);
+    height: 4.25rem;
+    width: 4.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(217, 12%, 63%);
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+}
+label:hover {
+    background-color: var(--Orange);
+}
+input {
+    display: none;
+}
+button {
+    background-color:var(--Orange);
+    padding:14px;
+    width:100%;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    color:var(--White);
+    font-size: 14px;
+    font-weight:lighter;
+    margin-bottom: 1rem;
+    cursor: pointer;
+} 
+.rated-page {
+    text-align: center;
+}
+.selection {
+    background-color: hsl(213, 19%, 23%);
+    border-radius: 15px;
+    height: 3.5rem;
+    width: 60%;
+    display: flex;
+    margin: 2rem auto 3rem auto;
+    align-items: center;
+    justify-content: center;  
+    color: var(--Orange);
+    font-size: 14px; 
+    font-weight: lighter;
+}
+
+.inactive {
+    display: none;
+}
+
